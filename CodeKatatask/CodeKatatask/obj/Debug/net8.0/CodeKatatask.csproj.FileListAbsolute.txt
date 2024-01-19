@@ -1,0 +1,15 @@
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\bin\Debug\net8.0\CodeKatatask.exe
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\bin\Debug\net8.0\CodeKatatask.deps.json
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\bin\Debug\net8.0\CodeKatatask.runtimeconfig.json
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\bin\Debug\net8.0\CodeKatatask.dll
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\bin\Debug\net8.0\CodeKatatask.pdb
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.GeneratedMSBuildEditorConfig.editorconfig
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.AssemblyInfoInputs.cache
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.AssemblyInfo.cs
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.csproj.CoreCompileInputs.cache
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.sourcelink.json
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.dll
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\refint\CodeKatatask.dll
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.pdb
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\CodeKatatask.genruntimeconfig.cache
+C:\unitygitcodegata\SpartaCodeKata\CodeKatatask\CodeKatatask\obj\Debug\net8.0\ref\CodeKatatask.dll
