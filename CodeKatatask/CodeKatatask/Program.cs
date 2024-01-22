@@ -10,7 +10,7 @@ namespace CodeKatatask
         static void Main(string[] args)
         {
 
-            static int solution(int angle)
+            static int solutioneight(int angle)
             {
                 int answer = 0;
 
@@ -32,8 +32,33 @@ namespace CodeKatatask
                 }
                 return answer;
             }
+
+            // 9번문제 짝수의 합
+            static int solutionnine(int n)
+            {
+                int answer = 0;
+
+                for (int i = 2; i <= n; i += 2)
+                {
+                    answer += i;
+                }
+
+                return answer;
+            }
         }
+
+
+
+
+
+
+
     }
+
+
+
+
+    
 }
 
 

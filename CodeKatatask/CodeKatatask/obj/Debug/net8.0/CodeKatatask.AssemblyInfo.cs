@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeKatatask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cdfc554010731aea4c4fe02a91b085ca17fb235")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeKatatask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeKatatask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
