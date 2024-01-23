@@ -1,11 +1,19 @@
 ﻿
 
 using System.Security.Cryptography;
+using System.Linq;
 
 namespace CodeKatatask
 {
     internal class Program
     {
+
+
+
+
+
+
+
         // 8번문제 각도기
         static void Main(string[] args)
         {
@@ -49,6 +57,22 @@ namespace CodeKatatask
 
 
 
+        //10번문제 배열의 평균값
+            public double solutioneighth(int[] numbers)
+            {
+
+                return numbers.Average();
+
+            }
+
+
+
+
+
+        //11번문제
+
+
+
 
 
 
@@ -58,7 +82,7 @@ namespace CodeKatatask
 
 
 
-    
+
 }
 
 
