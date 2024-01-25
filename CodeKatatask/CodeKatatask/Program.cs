@@ -69,11 +69,24 @@ namespace CodeKatatask
 
 
 
-        //11번문제
+        //11번문제 짝수와 홀수
+        public string solution(int num)
+        {
+            return (num % 2 == 0) ? "Even" : "Odd";
+        }
 
 
 
+        //12번문제 평균 구하기
+        public double solution(int[] arr)
+        {
+            double answer = 0;
+            answer = arr.Average();
+            return answer;
+        }
 
+
+        //13번 문제
 
 
 
