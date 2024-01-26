@@ -58,7 +58,7 @@ namespace CodeKatatask
 
 
         //10번문제 배열의 평균값
-            public double solutioneighth(int[] numbers)
+            public double solutionten(int[] numbers)
             {
 
                 return numbers.Average();
@@ -70,7 +70,7 @@ namespace CodeKatatask
 
 
         //11번문제 짝수와 홀수
-        public string solution(int num)
+        public string solutioneleven(int num)
         {
             return (num % 2 == 0) ? "Even" : "Odd";
         }
@@ -78,7 +78,7 @@ namespace CodeKatatask
 
 
         //12번문제 평균 구하기
-        public double solution(int[] arr)
+        public double solutiontwelve(int[] arr)
         {
             double answer = 0;
             answer = arr.Average();
@@ -87,7 +87,16 @@ namespace CodeKatatask
 
 
         //13번 문제
-
+        public int solutionthirteen(int n)
+        {
+            int answer = 0;
+            while (n > 0)
+            {
+                answer += n % 10;
+                n /= 10;
+            }
+            return answer;
+        }
 
 
     }
