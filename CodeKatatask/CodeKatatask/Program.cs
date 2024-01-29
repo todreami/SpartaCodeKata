@@ -86,7 +86,7 @@ namespace CodeKatatask
         }
 
 
-        //13번 문제
+        //13번 문제 자릿수 더하기
         public int solutionthirteen(int n)
         {
             int answer = 0;
@@ -97,6 +97,23 @@ namespace CodeKatatask
             }
             return answer;
         }
+
+        //14번 문제 약수의 합
+        public int solutionfourteen(int n)
+        {
+            int answer = 0;
+            for (int i = 1; i <= n; ++i)
+            {
+                if (n % i == 0)
+                {
+                    answer += i;
+                }
+            }
+            return answer;
+
+        }
+        //15번 문제
+
 
 
     }
