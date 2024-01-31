@@ -2,10 +2,18 @@
 
 using System.Security.Cryptography;
 using System.Linq;
+using System.Numerics;
+using System.Runtime.Intrinsics;
+//using namespace std;
+//namespace CodeKatatask
 
-namespace CodeKatatask
-{
-    internal class Program
+
+
+
+
+
+
+internal class Program
     {
 
 
@@ -112,17 +120,56 @@ namespace CodeKatatask
             return answer;
 
         }
-        //15번 문제
+        //15번 문제 나머지가 1이 되는 수 찾기
+        public int solutionfifteen(int n)
+        {
+            int answer = 0;
+            for (int i = 1; i <= 1000000; i++)
+            {
+                if (n % i == 1)
+                {
+                    answer = i;
+                    break;
+                }
+
+            }
+            return answer;
+
+        }
 
 
-
+    //16번 문제 x만큼 간격이 있는 n개의 숫자, 1월 31일, 오답
+    public class Solutionsixteen
+    {
+        //vector<long long> solution(int x, int n)
+        //{
+        //    vector < long long> answer;
+        //    for (int i = 0; i < n; i++)
+        //        answer.push_back(x * (i + 1));
+        //    return answer;
+        //}
     }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
