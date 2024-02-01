@@ -16,12 +16,6 @@ using System.Runtime.Intrinsics;
 internal class Program
     {
 
-
-
-
-
-
-
         // 8번문제 각도기
         static void Main(string[] args)
         {
@@ -49,24 +43,26 @@ internal class Program
                 return answer;
             }
 
-            // 9번문제 짝수의 합
-            static int solutionnine(int n)
-            {
-                int answer = 0;
 
-                for (int i = 2; i <= n; i += 2)
-                {
-                    answer += i;
-                }
-
-                return answer;
-            }
         }
 
+    // 9번문제 짝수의 합
+    static int solutionnine(int n)
+    {
+        int answer = 0;
+
+        for (int i = 2; i <= n; i += 2)
+        {
+            answer += i;
+        }
+
+        return answer;
+    }
 
 
-        //10번문제 배열의 평균값
-            public double solutionten(int[] numbers)
+
+    //10번문제 배열의 평균값
+    public double solutionten(int[] numbers)
             {
 
                 return numbers.Average();
@@ -137,10 +133,9 @@ internal class Program
 
         }
 
-
     //16번 문제 x만큼 간격이 있는 n개의 숫자, 1월 31일, 오답
-    public class Solutionsixteen
-    {
+   // public int solutionsixteen(int n)
+    //{
         //vector<long long> solution(int x, int n)
         //{
         //    vector < long long> answer;
@@ -148,22 +143,64 @@ internal class Program
         //        answer.push_back(x * (i + 1));
         //    return answer;
         //}
-    }
 
 
 
+        //17번 문제 자연수 뒤집어 배열로 만들기
 
+    //   public int* seventeensolution(long long n)
+    //{
+    //    int count = 0;
+    //    long long Num = n;
 
+    //    while (true)
+    //    {
+    //        count++;
+    //        Num = Num / 10;
 
+    //        if (Num == 0) break;
+    //    }
 
+    //    Num = n;
+    //    int* answer = (int*)malloc(sizeof(int) * count);
 
+    //    for (int i = 0; i < count; i++)
+    //    {
+    //        answer[i] = Num % 10;
+    //        Num = Num / 10;
+    //    }
 
+    //    return answer;
+    //}
 
 
 
 
 
 }
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
