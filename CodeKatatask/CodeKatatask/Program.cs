@@ -134,19 +134,19 @@ internal class Program
         }
 
     //16번 문제 x만큼 간격이 있는 n개의 숫자, 1월 31일, 오답
-   // public int solutionsixteen(int n)
+    // public int solutionsixteen(int n)
     //{
-        //vector<long long> solution(int x, int n)
-        //{
-        //    vector < long long> answer;
-        //    for (int i = 0; i < n; i++)
-        //        answer.push_back(x * (i + 1));
-        //    return answer;
-        //}
+    //vector<long long> solution(int x, int n)
+    //{
+    //    vector < long long> answer;
+    //    for (int i = 0; i < n; i++)
+    //        answer.push_back(x * (i + 1));
+    //    return answer;
+    //}
 
 
 
-        //17번 문제 자연수 뒤집어 배열로 만들기
+    //17번 문제 자연수 뒤집어 배열로 만들기
 
     //   public int* seventeensolution(long long n)
     //{
@@ -174,6 +174,14 @@ internal class Program
     //}
 
 
+    //18번 문제 문자열을 정수로 바꾸기
+
+    //public int solutioneighteen(const char* s) 
+    //{
+    //       int answer = atoi(s);
+    //return answer;
+    //}
+
 
 
 
@@ -181,14 +189,14 @@ internal class Program
 
 
 
-    
 
 
 
 
 
 
-    
+
+
 
 
 
