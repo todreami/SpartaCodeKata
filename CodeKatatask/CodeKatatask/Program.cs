@@ -131,18 +131,21 @@ internal class Program
             }
             return answer;
 
-        }
+    }
 
     //16번 문제 x만큼 간격이 있는 n개의 숫자, 1월 31일, 오답
     // public int solutionsixteen(int n)
     //{
-    //vector<long long> solution(int x, int n)
-    //{
-    //    vector < long long> answer;
-    //    for (int i = 0; i < n; i++)
-    //        answer.push_back(x * (i + 1));
-    //    return answer;
-    //}
+    //    vector < long long> solution(int x, int n)
+
+    //        vector < long long> answer;
+    //        for (int i = 0; i < n; i++)
+    //            answer.push_back(x * (i + 1));
+    //        return answer;
+    //    }
+
+
+
 
 
 
@@ -182,7 +185,18 @@ internal class Program
     //return answer;
     //}
 
-
+    //19번 문제 정수 제곱근 판별
+    //long long nighteensolution(long long n)
+    //   for(long long i = 1; ; i++)
+    //{
+    //    if(i* i > n)
+    //        return -1;
+    //    else
+    //    {
+    //        if(n == (i* i))
+    //            return (i+1)*(i+1);
+    //    }
+    //}
 
 
 }
