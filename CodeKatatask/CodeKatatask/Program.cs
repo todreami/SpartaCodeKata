@@ -151,7 +151,7 @@ internal class Program
 
     //17번 문제 자연수 뒤집어 배열로 만들기
 
-    //   public int* seventeensolution(long long n)
+    //   public int* solutionseventeen(long long n)
     //{
     //    int count = 0;
     //    long long Num = n;
@@ -186,7 +186,7 @@ internal class Program
     //}
 
     //19번 문제 정수 제곱근 판별
-    //long long nighteensolution(long long n)
+    //long long solutionnighteen(long long n)
     //   for(long long i = 1; ; i++)
     //{
     //    if(i* i > n)
@@ -197,6 +197,27 @@ internal class Program
     //            return (i+1)*(i+1);
     //    }
     //}
+
+
+    //20번 문제 정수 내림차순으로 배치하기
+    //public long solutiontwenty(long n)
+    //{
+    //    long long answer = 0;
+
+    //    string str = to_string(n);
+    //    sort(str.begin(), str.end(), greater<char>());
+    //    answer = stoll(str);
+
+    //    return answer;
+    //}
+
+
+
+
+
+
+
+
 
 
 }
