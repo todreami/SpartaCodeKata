@@ -212,7 +212,27 @@ internal class Program
     //}
 
 
+    //21번 문제 하샤드 수
+    //public bool solutiontwentyone(int x)
+    //{
+    //    bool answer = true;
+    //    int sum = 0;
+    //    int n = x;
 
+    //    while (x)
+    //    {
+    //        sum += x % 10;
+    //        x /= 10;
+    //    }
+
+    //    if (n % sum == 0)
+    //        answer = true;
+
+    //    else
+    //        answer = false;
+
+    //    return answer;
+}
 
 
 
