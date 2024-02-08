@@ -149,7 +149,7 @@ internal class Program
 
 
 
-    //17번 문제 자연수 뒤집어 배열로 만들기
+    //17번 문제 자연수 뒤집어 배열로 만들기, 오답
 
     //   public int* solutionseventeen(long long n)
     //{
@@ -177,7 +177,7 @@ internal class Program
     //}
 
 
-    //18번 문제 문자열을 정수로 바꾸기
+    //18번 문제 문자열을 정수로 바꾸기, 오답
 
     //public int solutioneighteen(const char* s) 
     //{
@@ -199,7 +199,7 @@ internal class Program
     //}
 
 
-    //20번 문제 정수 내림차순으로 배치하기
+    //20번 문제 정수 내림차순으로 배치하기, 오답
     //public long solutiontwenty(long n)
     //{
     //    long long answer = 0;
@@ -212,7 +212,7 @@ internal class Program
     //}
 
 
-    //21번 문제 하샤드 수
+    //21번 문제 하샤드 수, 오답
     //public bool solutiontwentyone(int x)
     //{
     //    bool answer = true;
@@ -232,6 +232,36 @@ internal class Program
     //        answer = false;
 
     //    return answer;
+
+
+    //22번 문제 두 정수 사이의 합, 오답
+    //public long solutiontwentytwo(int a, int b)
+    //{
+    //    long long answer = 0;
+    //    if (a > b)
+    //    {
+    //        int temp = b;
+    //        b = a;
+    //        a = temp;
+    //    }
+    //    for (int i = a; i <= b; i++)
+    //    {
+    //        answer += i;
+    //    }
+    //    return answer;
+    //}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
