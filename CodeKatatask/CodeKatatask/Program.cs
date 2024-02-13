@@ -251,7 +251,21 @@ internal class Program
     //    return answer;
     //}
 
+    //23번 문제 콜라츠 추측
+    public int solution(int num)
+    {
+        long answer = num;
 
+        for (int i = 0; i < 500; i++)
+        {
+            if (answer == 1)
+                return i;
+
+            answer = (answer % 2 == 0) ? (answer / 2) : (3 * answer + 1);
+        }
+
+        return -1;
+    }
 
 
 
@@ -270,7 +284,7 @@ internal class Program
 
 
 
-}
+
 
 
 
