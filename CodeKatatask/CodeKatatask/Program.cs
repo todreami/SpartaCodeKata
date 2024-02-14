@@ -251,8 +251,8 @@ internal class Program
     //    return answer;
     //}
 
-    //23번 문제 콜라츠 추측
-    public int solution(int num)
+    //23번 문제 콜라츠 추측 2.13
+    public int solutiontwentythree(int num)
     {
         long answer = num;
 
@@ -268,8 +268,25 @@ internal class Program
     }
 
 
+    //24번 문제 서울에서 김서방 찾기 2.14
 
+    //public string solutiontwentyfour(vector<string> seoul)
+    //{
+    //    string answer = "";
+    //    int nIndex = 0;
+    //    for (int i = 0; i < seoul.size(); i++)
+    //    {
+    //        if (seoul[i] == "Kim")
+    //        {
+    //            nIndex = i;
+    //            break;
+    //        }
+    //    }
 
+    //    answer = "김서방은 " + to_string(nIndex) + "에 있다";
+
+    //    return answer;
+    //}
 
 
 
