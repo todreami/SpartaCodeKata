@@ -289,6 +289,20 @@ internal class Program
     //}
 
 
+    //25번 문제 나누어 떨어지는 숫자
+
+    //public vector<int> solutiontwentyfive(vector<int> arr, int divisor) 2.15
+    //{
+    //    vector<int> answer;
+    //    for (int i = 0; i < arr.size(); i++)
+    //    {
+    //        if (arr[i] % divisor == 0) answer.push_back(arr[i]);
+    //    }
+    //    if (!answer.size()) answer.push_back(-1);
+    //    sort(answer.begin(), answer.end());
+    //    return answer;
+    //}
+
 
 
 
