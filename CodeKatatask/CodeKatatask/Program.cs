@@ -14,37 +14,37 @@ using System.Runtime.Intrinsics;
 
 
 internal class Program
+{
+
+    // 8번문제 각도기
+    static void Main(string[] args)
     {
 
-        // 8번문제 각도기
-        static void Main(string[] args)
+        static int solutioneight(int angle)
         {
+            int answer = 0;
 
-            static int solutioneight(int angle)
+            if (0 < angle && angle < 90)
             {
-                int answer = 0;
-
-                if (0 < angle && angle < 90)
-                {
-                    answer = 1;
-                }
-                if (angle == 90)
-                {
-                    answer = 2;
-                }
-                if (90 < angle && angle < 180)
-                {
-                    answer = 3;
-                }
-                if (angle == 180)
-                {
-                    answer = 4;
-                }
-                return answer;
+                answer = 1;
             }
-
-
+            if (angle == 90)
+            {
+                answer = 2;
+            }
+            if (90 < angle && angle < 180)
+            {
+                answer = 3;
+            }
+            if (angle == 180)
+            {
+                answer = 4;
+            }
+            return answer;
         }
+
+
+    }
 
     // 9번문제 짝수의 합
     static int solutionnine(int n)
@@ -63,73 +63,73 @@ internal class Program
 
     //10번문제 배열의 평균값
     public double solutionten(int[] numbers)
+    {
+
+        return numbers.Average();
+
+    }
+
+
+
+
+
+    //11번문제 짝수와 홀수
+    public string solutioneleven(int num)
+    {
+        return (num % 2 == 0) ? "Even" : "Odd";
+    }
+
+
+
+    //12번문제 평균 구하기
+    public double solutiontwelve(int[] arr)
+    {
+        double answer = 0;
+        answer = arr.Average();
+        return answer;
+    }
+
+
+    //13번 문제 자릿수 더하기
+    public int solutionthirteen(int n)
+    {
+        int answer = 0;
+        while (n > 0)
+        {
+            answer += n % 10;
+            n /= 10;
+        }
+        return answer;
+    }
+
+    //14번 문제 약수의 합
+    public int solutionfourteen(int n)
+    {
+        int answer = 0;
+        for (int i = 1; i <= n; ++i)
+        {
+            if (n % i == 0)
             {
+                answer += i;
+            }
+        }
+        return answer;
 
-                return numbers.Average();
-
+    }
+    //15번 문제 나머지가 1이 되는 수 찾기
+    public int solutionfifteen(int n)
+    {
+        int answer = 0;
+        for (int i = 1; i <= 1000000; i++)
+        {
+            if (n % i == 1)
+            {
+                answer = i;
+                break;
             }
 
-
-
-
-
-        //11번문제 짝수와 홀수
-        public string solutioneleven(int num)
-        {
-            return (num % 2 == 0) ? "Even" : "Odd";
         }
-
-
-
-        //12번문제 평균 구하기
-        public double solutiontwelve(int[] arr)
-        {
-            double answer = 0;
-            answer = arr.Average();
-            return answer;
-        }
-
-
-        //13번 문제 자릿수 더하기
-        public int solutionthirteen(int n)
-        {
-            int answer = 0;
-            while (n > 0)
-            {
-                answer += n % 10;
-                n /= 10;
-            }
-            return answer;
-        }
-
-        //14번 문제 약수의 합
-        public int solutionfourteen(int n)
-        {
-            int answer = 0;
-            for (int i = 1; i <= n; ++i)
-            {
-                if (n % i == 0)
-                {
-                    answer += i;
-                }
-            }
-            return answer;
-
-        }
-        //15번 문제 나머지가 1이 되는 수 찾기
-        public int solutionfifteen(int n)
-        {
-            int answer = 0;
-            for (int i = 1; i <= 1000000; i++)
-            {
-                if (n % i == 1)
-                {
-                    answer = i;
-                    break;
-                }
-
-            }
-            return answer;
+        return answer;
 
     }
 
@@ -268,7 +268,7 @@ internal class Program
     }
 
 
-    //24번 문제 서울에서 김서방 찾기 2.14
+    //24번 문제 서울에서 김서방 찾기 2.14 오답
 
     //public string solutiontwentyfour(vector<string> seoul)
     //{
@@ -289,7 +289,7 @@ internal class Program
     //}
 
 
-    //25번 문제 나누어 떨어지는 숫자
+    //25번 문제 나누어 떨어지는 숫자 2.15 오답
 
     //public vector<int> solutiontwentyfive(vector<int> arr, int divisor) 2.15
     //{
@@ -303,15 +303,31 @@ internal class Program
     //    return answer;
     //}
 
+    //26번 문제 음양 더하기 2.16 오답
+
+    //public int solutiontwentysix(int absolutes[], size_t absolutes_len, bool signs[], size_t signs_len)
+    //{
+    //    int answer = 0;
+    //    int sign[] = { 0, };
+
+
+    //    for (int i = 0; i < absolutes_len; i++)
+    //    {
+    //        if (signs[i])
+    //            answer += absolutes[i];
+    //        else
+    //            answer -= absolutes[i];
+    //    }
+
+    //    return answer;
+    //}
+
+
 
 
 
 
 }
-
-
-
-
 
 
 
