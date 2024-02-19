@@ -13,7 +13,7 @@ using System.Runtime.Intrinsics;
 
 
 
-internal class Program
+public class Program
 {
 
     // 8번문제 각도기
@@ -232,7 +232,7 @@ internal class Program
     //        answer = false;
 
     //    return answer;
-
+    // }
 
     //22번 문제 두 정수 사이의 합, 오답
     //public long solutiontwentytwo(int a, int b)
@@ -323,14 +323,38 @@ internal class Program
     //}
 
 
+    //27번 문제 음양 더하기 2.19 오답
+
+  //  public char* solutiontwentyseven(const char* phone_number) 
+  //  {
+
+  //int length = strlen(phone_number);
+  //  char* answer = (char*)malloc(length + 1);
+
+  //  strncpy(answer, phone_number, length);
+
+  //  for(int i=0;i<length-4;i++)
+  //  {
+  //      answer[i]='*';
+  //  }
+  //  answer[length] = NULL;
+  //  return answer;
+        
+  // }
+
+   
+
+
+
+
+
+
 
 
 
 
 }
-
-
-
+    
 
 
 
