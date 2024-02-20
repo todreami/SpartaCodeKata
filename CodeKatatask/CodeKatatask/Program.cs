@@ -325,26 +325,36 @@ public class Program
 
     //27번 문제 음양 더하기 2.19 오답
 
-  //  public char* solutiontwentyseven(const char* phone_number) 
-  //  {
+    //  public char* solutiontwentyseven(const char* phone_number) 
+    //  {
 
-  //int length = strlen(phone_number);
-  //  char* answer = (char*)malloc(length + 1);
+    //int length = strlen(phone_number);
+    //  char* answer = (char*)malloc(length + 1);
 
-  //  strncpy(answer, phone_number, length);
+    //  strncpy(answer, phone_number, length);
 
-  //  for(int i=0;i<length-4;i++)
-  //  {
-  //      answer[i]='*';
-  //  }
-  //  answer[length] = NULL;
-  //  return answer;
-        
-  // }
+    //  for(int i=0;i<length-4;i++)
+    //  {
+    //      answer[i]='*';
+    //  }
+    //  answer[length] = NULL;
+    //  return answer;
 
-   
+    // }
 
 
+    //28번 문제 없는 숫자 더하기 2.20 오답
+    //public int solution(int numbers[], size_t numbers_len)
+    //{
+    //    int answer = 45;
+
+    //    for (int i = 0; i < numbers_len; i++)
+    //    {
+    //        answer -= numbers[i];
+    //    }
+
+    //    return answer;
+    //}
 
 
 
@@ -354,7 +364,7 @@ public class Program
 
 
 }
-    
+
 
 
 
