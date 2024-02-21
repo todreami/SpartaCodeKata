@@ -344,7 +344,7 @@ public class Program
 
 
     //28번 문제 없는 숫자 더하기 2.20 오답
-    //public int solution(int numbers[], size_t numbers_len)
+    //public int solutiontwentyeight(int numbers[], size_t numbers_len)
     //{
     //    int answer = 45;
 
@@ -356,8 +356,17 @@ public class Program
     //    return answer;
     //}
 
+    //29번 문제 없는 숫자 더하기 2.21 오답
+    //public vector<int> solutiontwentynine(vector<int> arr)
+    //{
+    //    vector<int> answer = arr;
 
+    //    int nMin = *min_element(arr.begin(), arr.end());
+    //    int pos = find(answer.begin(), answer.end(), nMin) - answer.begin();
+    //    answer.erase(answer.begin() + pos);
 
+    //    return answer.empty() ? vector<int>(1, -1) : answer;
+    //}
 
 
 
