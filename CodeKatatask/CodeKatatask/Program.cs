@@ -369,7 +369,7 @@ public class Program
     //}
 
 
-    //30번 가운데 글자 가져오기 2.21 오답
+    //30번 가운데 글자 가져오기 2.22 오답
     //public char* solutionthirty(const char* s) 
 //    {
 //        char* answer;
