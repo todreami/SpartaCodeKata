@@ -323,7 +323,7 @@ public class Program
     //}
 
 
-    //27번 문제 음양 더하기 2.19 오답
+    //27번 문제 핸드폰 번호 가리기 2.19 오답
 
     //  public char* solutiontwentyseven(const char* phone_number) 
     //  {
@@ -356,7 +356,7 @@ public class Program
     //    return answer;
     //}
 
-    //29번 문제 없는 숫자 더하기 2.21 오답
+    //29번 제일 작은 수 제거하기 2.21 오답
     //public vector<int> solutiontwentynine(vector<int> arr)
     //{
     //    vector<int> answer = arr;
@@ -368,6 +368,27 @@ public class Program
     //    return answer.empty() ? vector<int>(1, -1) : answer;
     //}
 
+
+    //30번 가운데 글자 가져오기 2.21 오답
+    //public char* solutionthirty(const char* s) 
+//    {
+//        char* answer;
+//    int c = strlen(s);
+//    if(c % 2)
+//    {
+//        answer = (char*)malloc(2);
+//        answer[0] = s[c/2];
+//        answer[1] = '\0';
+//    }
+//    else
+//    {
+//        answer = (char*)malloc(3);
+//        answer[0] = s[c/2-1];
+//        answer[1] = s[c/2];
+//        answer[2] = '\0';
+//    }
+//    return answer;
+//}
 
 
 
