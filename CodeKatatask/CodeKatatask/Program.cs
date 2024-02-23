@@ -371,26 +371,39 @@ public class Program
 
     //30번 가운데 글자 가져오기 2.22 오답
     //public char* solutionthirty(const char* s) 
-//    {
-//        char* answer;
-//    int c = strlen(s);
-//    if(c % 2)
-//    {
-//        answer = (char*)malloc(2);
-//        answer[0] = s[c/2];
-//        answer[1] = '\0';
-//    }
-//    else
-//    {
-//        answer = (char*)malloc(3);
-//        answer[0] = s[c/2-1];
-//        answer[1] = s[c/2];
-//        answer[2] = '\0';
-//    }
-//    return answer;
-//}
+    //    {
+    //        char* answer;
+    //    int c = strlen(s);
+    //    if(c % 2)
+    //    {
+    //        answer = (char*)malloc(2);
+    //        answer[0] = s[c/2];
+    //        answer[1] = '\0';
+    //    }
+    //    else
+    //    {
+    //        answer = (char*)malloc(3);
+    //        answer[0] = s[c/2-1];
+    //        answer[1] = s[c/2];
+    //        answer[2] = '\0';
+    //    }
+    //    return answer;
+    //}
 
+    //31번 수박수박수박수박수박수? 2.23 오답
+    //public char* solution(int n)
+    //{
+    //    char* add1 = "수";
+    //    char* add2 = "박";
+    //    int len = strlen(add1);
+    //    char* answer = (char*)malloc(n * len);
+    //    for (int i = 0; i < n; i++)
+    //    {
+    //        strcpy(&answer[i * len], i % 2 == 0 ? add1 : add2);
+    //    }
 
+    //    return answer;
+    //}
 
 
 }
