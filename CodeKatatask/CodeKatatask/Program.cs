@@ -391,7 +391,7 @@ public class Program
     //}
 
     //31번 수박수박수박수박수박수? 2.23 오답
-    //public char* solution(int n)
+    //public char* solutionthirtyone(int n)
     //{
     //    char* add1 = "수";
     //    char* add2 = "박";
@@ -404,6 +404,19 @@ public class Program
 
     //    return answer;
     //}
+
+    //32번 내적 2.26 오답
+    //public int solutionthirtytwo(int a[], size_t a_len, int b[], size_t b_len)
+    //{
+    //    int answer = 0;
+    //    int i;
+
+    //    for (i = 0; i < a_len; i++)
+    //        answer += a[i] * b[i];
+
+    //    return answer;
+    //}
+
 
 
 }
