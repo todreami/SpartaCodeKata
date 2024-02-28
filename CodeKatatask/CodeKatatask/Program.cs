@@ -133,83 +133,74 @@ public class Program
 
     }
 
-    //16번 문제 x만큼 간격이 있는 n개의 숫자, 1월 31일, 오답
-    // public int solutionsixteen(int n)
-    //{
-    //    vector < long long> solution(int x, int n)
-
-    //        vector < long long> answer;
-    //        for (int i = 0; i < n; i++)
-    //            answer.push_back(x * (i + 1));
-    //        return answer;
-    //    }
-
-
+    //16번 문제 x만큼 간격이 있는 n개의 숫자, 1월 31일, 수정
+    public long[] solutionsixteen(int x, int n)
+    {
+        long[] answer = new long[n];
+        for (int i = 0; i < n; i++)
+        {
+            answer[i] = (long)x * (i + 1);
+        }
+        return answer;
+    }
 
 
 
 
-    //17번 문제 자연수 뒤집어 배열로 만들기, 오답
-
-    //   public int* solutionseventeen(long long n)
-    //{
-    //    int count = 0;
-    //    long long Num = n;
-
-    //    while (true)
-    //    {
-    //        count++;
-    //        Num = Num / 10;
-
-    //        if (Num == 0) break;
-    //    }
-
-    //    Num = n;
-    //    int* answer = (int*)malloc(sizeof(int) * count);
-
-    //    for (int i = 0; i < count; i++)
-    //    {
-    //        answer[i] = Num % 10;
-    //        Num = Num / 10;
-    //    }
-
-    //    return answer;
-    //}
 
 
-    //18번 문제 문자열을 정수로 바꾸기, 오답
+    //17번 문제 자연수 뒤집어 배열로 만들기, 수정
 
-    //public int solutioneighteen(const char* s) 
-    //{
-    //       int answer = atoi(s);
-    //return answer;
-    //}
+    public long[] solutionseventeen(long n)
+    {
+        int size = n.ToString().Length;
+        long[] answer = new long[size];
 
-    //19번 문제 정수 제곱근 판별
-    //long long solutionnighteen(long long n)
-    //   for(long long i = 1; ; i++)
-    //{
-    //    if(i* i > n)
-    //        return -1;
-    //    else
-    //    {
-    //        if(n == (i* i))
-    //            return (i+1)*(i+1);
-    //    }
-    //}
+        for (int i = 0; i < size; i++)
+        {
+            answer[i] = n % 10;
+            n /= 10;
+        }
+        return answer;
+    }
 
 
-    //20번 문제 정수 내림차순으로 배치하기, 오답
-    //public long solutiontwenty(long n)
-    //{
-    //    long long answer = 0;
+    //18번 문제 문자열을 정수로 바꾸기, 수정
 
-    //    string str = to_string(n);
-    //    sort(str.begin(), str.end(), greater<char>());
-    //    answer = stoll(str);
+    public int solutioneighteen(string s) 
+    {
+        int answer = int.Parse(s);
+        return answer;
+    }
 
-    //    return answer;
-    //}
+
+
+    //19번 문제 정수 제곱근 판별, 수정
+    public long solutionnighteen(long n)
+    {
+        long answer = 0;
+
+        long mul = (long)System.Math.Sqrt(n);
+
+        answer = (mul * mul == n) ? ((mul + 1) * (mul + 1)) : -1;
+
+        return answer;
+    }
+
+
+
+
+
+    //20번 문제 정수 내림차순으로 배치하기, 수정
+    public long solutiontwenty(long n)
+    {
+        long answer = 0;
+        char[] a = n.ToString().ToCharArray();
+        System.Array.Sort(a);
+        System.Array.Reverse(a);
+        answer = System.Convert.ToInt64(new string(a));
+        return answer;
+    }
 
 
     //21번 문제 하샤드 수, 오답
@@ -442,7 +433,15 @@ public class Program
     //    return answer;
     //}
 
+    //34번 문자열 내림차순으로 배치하기 2.28
+    public string solution(string s)
+    {
+        string answer = "";
+        char[] chr_temp = s.ToCharArray();
 
+        answer = new string(s.OrderByDescending(x => x).ToArray());
+        return answer;
+    }
 
 
 
