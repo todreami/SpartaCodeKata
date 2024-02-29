@@ -409,7 +409,7 @@ public class Program
     //}
 
     //33번 약수의 개수와 덧셈 2.27 오답
-    //public int solution(int left, int right)
+    //public int solutionthirtythree(int left, int right)
     //{
     //    int answer = 0;
     //    int count = 0;
@@ -434,7 +434,7 @@ public class Program
     //}
 
     //34번 문자열 내림차순으로 배치하기 2.28
-    public string solution(string s)
+    public string solutionthirtyfour(string s)
     {
         string answer = "";
         char[] chr_temp = s.ToCharArray();
@@ -442,6 +442,30 @@ public class Program
         answer = new string(s.OrderByDescending(x => x).ToArray());
         return answer;
     }
+
+    //35번 문자열 내림차순으로 배치하기 2.28
+    public long solutionthirtyfive(int price, int money, int count)
+    {
+        long answer = 0;
+        long total = 0;
+
+
+        for (int i = 1; i < count + 1; i++)
+        {
+            total += price * i;
+        }
+
+        if (money < total)
+            answer = total - money;
+
+        else
+            answer = 0;
+
+        return answer;
+    }
+
+
+
 
 
 
