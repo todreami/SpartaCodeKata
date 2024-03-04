@@ -464,8 +464,18 @@ public class Program
         return answer;
     }
 
+    //36번 문자열 다루기 기본
+    public bool solutionthirtysix(string s)
+    {
+        bool answer = false;
 
+        if (s.Length == 4 || s.Length == 6)
+        {
+            answer = int.TryParse(s, out int temp);
+        }
 
+        return answer;
+    }
 
 
 
