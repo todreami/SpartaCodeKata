@@ -513,7 +513,26 @@ public class Program
         }
     }
 
+    //39번 최대공약수와 최소공배수
+    public int[] solutionthirtnine(int n, int m)
+    {
+        int[] answer = new int[2];
+        int min;
+        int max;
 
+        min = gcd(n, m);
+        max = (n * m) / min;
+
+        answer[0] = min;
+        answer[1] = max;
+        return answer;
+    }
+
+    public int gcd(int n, int m)
+    {
+        if (m == 0) return n;
+        else return gcd(m, n % m);
+    }
 
 
 
