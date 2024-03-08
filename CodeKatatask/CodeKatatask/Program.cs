@@ -534,7 +534,18 @@ public class Program
         else return gcd(m, n % m);
     }
 
-
+    //40번 3진법 뒤집기
+    public int solutionforty(int n)
+    {
+        int answer = 0;
+        while (n > 0)
+        {
+            answer *= 3;
+            answer += n % 3;
+            n /= 3;
+        }
+        return answer;
+    }
 
 
 
