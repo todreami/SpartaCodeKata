@@ -546,8 +546,32 @@ public class Program
         }
         return answer;
     }
-
-
+    //41번 이상한 문자 만들기
+    public string solutionfortyone(string s)
+    {
+        string answer = "";
+        int wordIndex = 0;
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (s[i] == ' ')
+            {
+                answer += s[i];
+                wordIndex = 0;
+                continue;
+            }
+            if (wordIndex % 2 == 0)
+            {
+                answer += s[i].ToString().ToUpper();
+                wordIndex++;
+            }
+            else
+            {
+                answer += s[i].ToString().ToLower();
+                wordIndex++;
+            }
+        }
+        return answer;
+    }
 
 
 }
