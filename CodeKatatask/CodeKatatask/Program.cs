@@ -593,8 +593,19 @@ public class Program
         return cnt;
     }
 
-    //43번
+    //43번 크기가 작은 부분문자열
 
+    public int solutionfortythree(string t, string p)
+    {
+        int answer = 0;
+        long num = 0;
+        for (int i = 0; i < t.Length - p.Length + 1; i++)
+        {
+            num = long.Parse(t.Substring(i, p.Length));
+            if (num <= long.Parse(p)) { answer++; }
+        }
+        return answer;
+    }
 
 
 
