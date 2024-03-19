@@ -674,6 +674,18 @@ public class Program
     }
 
 
+    //47번 문자열 내 마음대로 정렬하기
+    public string[] solutionfortyseven(string[] strings, int n)
+    {
+        string[] answer = strings.OrderBy(x => x).OrderBy(x => x[n]).ToArray();
+
+        return answer;
+    }
+
+
+
+
+
 
 }
 
