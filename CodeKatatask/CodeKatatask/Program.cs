@@ -711,8 +711,28 @@ public class Program
         return answer;
     }
 
-
-
+    //49번 두 개 뽑아서 더하기
+    public int[] solutionfortynine(int[] numbers)
+    {
+        int[] answer = new int[] { };
+        List<int> empty = new List<int>();
+        List<int> answers = new List<int>();
+        Array.Sort(numbers);
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            for (int j = i + 1; j < numbers.Length; j++)
+            {
+                empty.Add(numbers[i] + numbers[j]);
+            }
+        }
+        for (int i = 0; i < empty.Count; i++)
+        {
+            if (!answers.Contains(empty[i]))
+                answers.Add(empty[i]);
+        }
+        answers.Sort();
+        return answers.ToArray();
+    }
 
 
 
