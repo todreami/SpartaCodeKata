@@ -734,6 +734,7 @@ public class Program
         return answers.ToArray();
     }
 
+    //50번 가장 가까운 같은 글자
     public int[] solutionfifty(string s)
     {
         int[] answer = new int[s.Length];
@@ -756,8 +757,23 @@ public class Program
     }
 
 
+    //51번 푸드 파이트 대회
+    public string solutionfiftyone(int[] food)
+    {
+        string answer = "";
+        string str = "";
 
-
+        for (int i = 1; i < food.Length; i++)
+        {
+            for (int j = 0; j < food[i] / 2; j++)
+            {
+                answer += i.ToString();
+            }
+        }
+        str = String.Concat(answer.Reverse());
+        answer += "0" + str;
+        return answer;
+    }
 
 
 
