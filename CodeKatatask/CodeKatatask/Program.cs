@@ -877,8 +877,70 @@ public class Program
         return answer;
     }
 
+    //57번 모의고사완전탐색
+    public int[] solutionfiftyseven(int[] answers)
+    {
+        Dictionary<int, int> dic = new Dictionary<int, int>();
+        dic.Add(1, 0);
+        dic.Add(2, 0);
+        dic.Add(3, 0);
 
+        int[] one = new int[] { 1, 2, 3, 4, 5 };
+        int[] two = new int[] { 2, 1, 2, 3, 2, 4, 2, 5 };
+        int[] three = new int[] { 3, 3, 1, 1, 2, 2, 4, 4, 5, 5 };
 
+        int loop = 0;
+        int oneIndex = 0;
+        int twoIndex = 0;
+        int threeIndex = 0;
+        int max = 0;
+        while (loop < answers.Length)
+        {
+            if (loop % one.Length == 0)
+            {
+                oneIndex = 0;
+            }
+            if (loop % two.Length == 0)
+            {
+                twoIndex = 0;
+            }
+            if (loop % three.Length == 0)
+            {
+                threeIndex = 0;
+            }
+
+            if (one[oneIndex] == answers[loop])
+            {
+                dic[1] += 1;
+                max = dic[1] > max ? dic[1] : max;
+            }
+            if (two[twoIndex] == answers[loop])
+            {
+                dic[2] += 1;
+                max = dic[2] > max ? dic[2] : max;
+            }
+            if (three[threeIndex] == answers[loop])
+            {
+                dic[3] += 1;
+                max = dic[3] > max ? dic[3] : max;
+            }
+
+            oneIndex++;
+            twoIndex++;
+            threeIndex++;
+            loop++;
+        }
+        List<int> list = new List<int>();
+
+        foreach (var endDic in dic)
+        {
+            if (max == endDic.Value)
+            {
+                list.Add(endDic.Key);
+            }
+        }
+        return list.ToArray();
+    }
 
 
 
