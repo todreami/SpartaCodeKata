@@ -168,7 +168,7 @@ public class Program
 
     //18번 문제 문자열을 정수로 바꾸기, 수정
 
-    public int solutioneighteen(string s) 
+    public int solutioneighteen(string s)
     {
         int answer = int.Parse(s);
         return answer;
@@ -1240,8 +1240,27 @@ public class Program
         return answer;
     }
 
+    //68번 햄버거 만들기
+    public int solutionsixtyeight(int[] ingredient)
+    {
+        int answer = 0;
+        List<int> list = new List<int>();
 
-
+        foreach (int burger in ingredient)
+        {
+            list.Add(burger);
+            if (list.Count >= 4)
+            {
+                if (list[list.Count - 4] == 1 && list[list.Count - 3] == 2
+                   && list[list.Count - 2] == 3 && list[list.Count - 1] == 1)
+                {
+                    answer++;
+                    list.RemoveRange(list.Count - 4, 4);
+                }
+            }
+        }
+        return answer;
+    }
 }
 
 
