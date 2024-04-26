@@ -5,6 +5,7 @@ using System.Linq;
 using System.Numerics;
 using System.Runtime.Intrinsics;
 using System;
+using System.Text;
 //using namespace std;
 //namespace CodeKatatask
 
@@ -1331,8 +1332,231 @@ public class Program
         return answer;
     }
 
+    //71번 개인정보 수집 유효기간 4.23
+    public int[] solutionseventyone(string today, string[] terms, string[] privacies)
+    {
+        List<int> answer = new List<int>();
+        DateTime todayDt = DateTime.Parse(today);
+
+        Dictionary<string, string> temrsDic = new Dictionary<string, string>();
+
+        for (int i = 0; i < terms.Length; i++)
+        {
+            string[] ss = terms[i].Split(" ");
+            temrsDic.Add(ss[0], ss[1]);
+        }
+
+        for (int i = 0; i < privacies.Length; i++)
+        {
+            string[] ss = privacies[i].Split(" ");
+
+            if (temrsDic.TryGetValue(ss[1], out string value))
+            {
+                DateTime privacie = DateTime.Parse(ss[0]).AddMonths(int.Parse(value));
+
+                if (todayDt.CompareTo(privacie) != -1)
+                {
+                    answer.Add(i + 1);
+                }
+            }
+        }
+
+        answer.Sort();
+        return answer.ToArray();
+    }
 
 
+    //72번 달리기 경주
+    public string[] solutionseventytwo(string[] players, string[] callings)
+    {
+        Dictionary<string, int> dic = new Dictionary<string, int>();
+
+        for (int i = 0; i < players.Length; i++) { dic.Add(players[i], i); }
+
+        foreach (string call in callings)
+        {
+            int rank = dic[call];
+            string overtake = players[rank - 1];
+
+            players[rank - 1] = call;
+            players[rank] = overtake;
+
+            dic[call] = rank - 1;
+            dic[overtake] = rank;
+        }
+        return players;
+    }
+
+
+    //73번 공원 산책
+    public int[] solutionseventythree(string[] park, string[] routes)
+    {
+        int w = park[0].Length;
+        int h = park.Length;
+        int x = 0;
+        int y = 0;
+
+        for (int i = 0; i < h; i++)
+        {
+            for (int j = 0; j < w; j++)
+            {
+                if (park[i][j] == 'S')
+                {
+                    x = j;
+                    y = i;
+                    break;
+                }
+            }
+        }
+
+        for (int i = 0; i < routes.Length; i++)
+        {
+            int tempX = x;
+            int tempY = y;
+
+            if (routes[i][0] == 'N')
+            {
+                tempY -= routes[i][2] - '0';
+            }
+            else if (routes[i][0] == 'S')
+            {
+                tempY += routes[i][2] - '0';
+            }
+            else if (routes[i][0] == 'W')
+            {
+                tempX -= routes[i][2] - '0';
+            }
+            else if (routes[i][0] == 'E')
+            {
+                tempX += routes[i][2] - '0';
+            }
+
+            if (tempX < w && tempX > -1 && tempY < h && tempY > -1)
+            {
+                bool check = true;
+                if (tempX > x)
+                {
+                    for (int j = x; j <= tempX; j++)
+                    {
+                        if (park[y][j] == 'X')
+                        {
+                            check = false;
+                            break;
+                        }
+                    }
+                }
+                else if (tempX < x)
+                {
+                    for (int j = tempX; j <= x; j++)
+                    {
+                        if (park[y][j] == 'X')
+                        {
+                            check = false;
+                            break;
+                        }
+                    }
+                }
+                else if (tempY > y)
+                {
+                    for (int j = y; j <= tempY; j++)
+                    {
+                        if (park[j][x] == 'X')
+                        {
+                            check = false;
+                            break;
+                        }
+                    }
+                }
+                else if (tempY < y)
+                {
+                    for (int j = tempY; j <= y; j++)
+                    {
+                        if (park[j][x] == 'X')
+                        {
+                            check = false;
+                            break;
+                        }
+                    }
+                }
+                if (check == true)
+                {
+                    x = tempX;
+                    y = tempY;
+                }
+            }
+
+        }
+        int[] answer = new int[2] { y, x };
+        return answer;
+    }
+
+    //74번 신고 결과 받기
+    public int[] solutionseventyfour(string[] id_list, string[] report, int k)
+    {
+        var tReport = report.Distinct().
+           Select(s => s.Split(' ')).
+           GroupBy(g => g[1]).
+           Where(w => w.Count() >= k).
+           SelectMany(sm => sm.Select(s => s[0])).
+           ToList();
+
+        return id_list.ToDictionary(x => x, x => tReport.Count(c => x == c)).Values.ToArray();
+
+    }
+
+    //75번 최댓값과 최솟값 4.29
+    public string solutionseventyfive(string s)
+    {
+        string answer = "";
+
+        int[] array = s.Split(' ').Select(int.Parse).ToArray();
+        answer = array.Min().ToString() + " " + array.Max().ToString();
+
+        return answer;
+    }
+
+    //76번 JadenCase 문자열 만들기 4.30
+    public string solutionseventysix(string s)
+    {
+        s = s.ToLower();
+        StringBuilder answer = new StringBuilder();
+        char[] temp = s.ToCharArray();
+
+        for (int i = 0; i < temp.Length; i++)
+        {
+            temp[0] = Char.ToUpper(temp[0]);
+            if (temp[i] == ' ' && i + 1 < temp.Length)
+            {
+                temp[i + 1] = Char.ToUpper(temp[i + 1]);
+            }
+        }
+
+        for (int i = 0; i < temp.Length; i++)
+        {
+            answer.Append(temp[i]);
+        }
+
+
+        return answer.ToString();
+    }
+
+    //77번 이진 변환 반복하기 5.1
+    public int[] solutionseventyseven(string s)
+    {
+        int zeroCount = 0;
+        int loopCount = 0;
+        while (s != "1")
+        {
+            string replaceStr = s.Replace("0", string.Empty);
+            int lengthDiff = s.Length - replaceStr.Length;
+            zeroCount += lengthDiff;
+            loopCount++;
+            s = Convert.ToString(replaceStr.Length, 2);
+        }
+
+        int[] answer = new int[] { loopCount, zeroCount };
+        return answer;
+    }
 
 }
 
